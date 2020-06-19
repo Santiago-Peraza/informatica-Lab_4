@@ -5,7 +5,7 @@
 using namespace std;
 
 
-// defino clase persona
+// defino clase Persona
 class Persona{
     public:
         // defino variables de persona
@@ -67,8 +67,29 @@ class Persona{
              
         }
 };
+// defino clase Salas
+class Salas{
+    public:
+        int numeroDeSala;
+        int numeroDeCama;
+        float cargosDiarios;
 
+        Salas(){
+            cout << "Número de sala: ";
+            cin >> numeroDeSala;
+            cout << "Número de cama: ";
+            cin >> numeroDeCama;
+            cout << "Cargos diarios: ";
+            cin >> cargosDiarios;
+        } 
+};
+// defino clase Internacion
+class Internacion{
+    public:
+        int cantidadDeDias;
+        float costoTotal;
 
+};
 int main(){
     cout << "Hola mundo " << endl;
     
